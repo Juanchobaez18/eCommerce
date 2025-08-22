@@ -1,4 +1,4 @@
-package com.sena.ecommerce.model;
+	package com.sena.ecommerce.model;
 
 import java.util.List;
 
