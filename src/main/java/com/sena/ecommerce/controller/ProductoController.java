@@ -50,7 +50,7 @@ public class ProductoController {
 	}
 
 	// metodo para el formulario de edicion deproductos
-	@GetMapping("/edit/{}id")
+	@GetMapping("/edit/{id}")
 	public String edit(@PathVariable Integer id, Model model) {
 		Producto p = new Producto();
 		// nos retorna la busqueda de un objeto de tipo producto con el id
@@ -68,7 +68,7 @@ public class ProductoController {
 		Usuario u = new Usuario(1, "", "", "", "", "", "", "", "");
 		producto.setUsuario(u);
 		productoService.update(producto);
-		return "redirect/productos";
+		return "redirect:/productos";
 	}
 
 	// metodo para eliminar con id un producto
